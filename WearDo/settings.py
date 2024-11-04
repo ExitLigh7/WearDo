@@ -20,7 +20,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #Custom Apps:
-    'WearDo.accounts.apps.AccountsConfig'
+    'WearDo.accounts.apps.AccountsConfig',
+    'WearDo.products.apps.ProductsConfig',
+    'WearDo.categories.apps.CategoriesConfig'
 ]
 
 MIDDLEWARE = [
@@ -104,6 +106,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'staticfiles']
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'mediafiles/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
